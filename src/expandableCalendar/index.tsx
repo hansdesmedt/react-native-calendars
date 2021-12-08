@@ -585,11 +585,11 @@ class ExpandableCalendar extends Component<Props, State> {
               onDayPress={this.onDayPress}
               onVisibleMonthsChange={this.onVisibleMonthsChange}
               pagingEnabled
-              scrollEnabled={isOpen}
+              scrollEnabled={isOpen && this.props.scrollEnabled}
               hideArrows={this.shouldHideArrows()}
               onPressArrowLeft={this.onPressArrowLeft}
               onPressArrowRight={this.onPressArrowRight}
-              hideExtraDays={!horizontal}
+              hideExtraDays={!horizontal || this.props.hideExtraDays}
               renderArrow={this.renderArrow}
               staticHeader
             />

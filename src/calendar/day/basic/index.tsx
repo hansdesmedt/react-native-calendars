@@ -143,7 +143,7 @@ export default class BasicDay extends Component<BasicDayProps> {
     //Custom marking type
     if (this.isCustom() && customStyles && customStyles.container) {
       if (customStyles.container.borderRadius === undefined) {
-        customStyles.container.borderRadius = 16;
+        customStyles.container.borderRadius = 22;
       }
       style.push(customStyles.container);
     }
